@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valeur Supérieur</title>
+</head>
+<body>
+<h1>coucou</h1>
+<div id="tableau"></div>
+    <script>
+    let tab  = [56,78,34,32,22,11,23];
+    let content = '';
+
+    for (let index = 0; index < tab.length; index++){
+
+        const element = tab[index];
+        if (element > 35)
+        { 
+    
+    content += element + " ";
+    }
+
+    let tableau = document.getElementById("tableau");
+    tableau.innerHTML = content;
+    }
+
+    
+
+
+console.log(found);
+    </script>
+    
+</body>
+</html>
