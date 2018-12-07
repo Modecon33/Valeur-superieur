@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Valeur Supérieur</title>
+    <style>
+    .rouge
+    {
+        color: red;
+    }
+    .bleu
+    {
+        color: blue;
+    }
+    </style>
 </head>
 <body>
 <h1>coucou</h1>
@@ -18,13 +28,18 @@
         const element = tab[index];
         if (element > 35)
         { 
-    
-    content += element + " ";
+            content += "<p class='rouge'>" + element + "</p>";
+        }
+        else
+        {
+            content += "<p class='bleu'>" + element + "</p>";
+        }
+    //content += element + " ";
     }
 
     let tableau = document.getElementById("tableau");
     tableau.innerHTML = content;
-    }
+    //}
 
     
 
